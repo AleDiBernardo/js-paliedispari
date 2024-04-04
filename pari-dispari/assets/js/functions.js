@@ -26,6 +26,14 @@ function randNumBtwOneAndFive () {
     return randNum;
 }
 
+/**
+ * Check if sum is even or odd
+ * @date 4/4/2024 - 8:18:50 PM
+ *
+ * @param {number} userNum
+ * @param {number} cpuNum
+ * @returns {boolean}
+ */
 function isSumEven (userNum,cpuNum) {
     let sum = userNum + cpuNum;
     

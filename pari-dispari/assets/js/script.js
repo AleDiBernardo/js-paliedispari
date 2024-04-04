@@ -20,6 +20,7 @@ const result = isSumEven(userNum, cpuNum);
 console.log("UserNum:" + userNum);
 console.log("CpuNum:" + cpuNum);
 console.log(result);
+
 if (userInput === "pari" && result) {
   alert(`La somma è pari. Hai vinto! 🎉`);
 } else if (userInput === "dispari" && result === false) {
