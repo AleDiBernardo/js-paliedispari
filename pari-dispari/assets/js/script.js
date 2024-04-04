@@ -4,7 +4,14 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-const userInput = prompt("Pari o dispari?");
+let userInput = "";
+
+do {
+  userInput = prompt("pari o dispari?");
+
+  //debug
+  console.warn(userInput);
+} while (userInput !== "pari" && userInput !== "dispari");
 
 const userNum = getNumBtwOneAndFive();
 const cpuNum = randNumBtwOneAndFive();
