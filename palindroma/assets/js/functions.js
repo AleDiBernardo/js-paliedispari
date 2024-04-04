@@ -1,3 +1,10 @@
+/**
+ * Description this function check if a word is palindromic
+ * @date 4/4/2024 - 2:29:41 PM
+ *
+ * @param {string} word
+ * @returns {boolean}
+ */
 function isPalindromic(word) {
   let invertedWord = "";
   let result = false;
