@@ -6,15 +6,28 @@
  * @returns {boolean}
  */
 function isPalindromic(word) {
-  let invertedWord = "";
   let result = false;
-  for (let i = word.length - 1; i >= 0; i--) {
-    invertedWord += word[i];
+  const reverseWord = reverseString(word);
 
-    if (invertedWord === word) {
-        result = true;
-    }
+  if (reverseWord === word) {
+    result = true;
   }
 
   return result;
+}
+
+/**
+ * Description placeholder
+ * @date 4/5/2024 - 10:21:27 AM
+ *
+ * @param {string} stringToReverse
+ * @returns {string}
+ */
+function reverseString(stringToReverse) {
+  let invertedWord = "";
+  for (let i = stringToReverse.length - 1; i >= 0; i--) {
+    invertedWord += stringToReverse[i];
+  }
+
+  return invertedWord;
 }

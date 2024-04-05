@@ -14,16 +14,17 @@ function getNumBtwOneAndFive() {
 }
 
 /**
- * Generate random number from 1 to 5 
+ * Generate random number from 1 to 5
  * @date 4/4/2024 - 2:53:25 PM
  *
  * @returns {number} randNum
  */
-function randNumBtwOneAndFive () {
-    const max = 5, min = 1;
-    const randNum = Math.floor(Math.random() * max - min + 1) + min;
+function randNumBtwOneAndFive() {
+  const max = 5,
+    min = 1;
+  const randNum = Math.floor(Math.random() * max - min + 1) + min;
 
-    return randNum;
+  return randNum;
 }
 
 /**
@@ -34,8 +35,8 @@ function randNumBtwOneAndFive () {
  * @param {number} cpuNum
  * @returns {boolean}
  */
-function isSumEven (userNum,cpuNum) {
-    let sum = userNum + cpuNum;
-    
-    return sum % 2 === 0;
+function isSumEven(userNum, cpuNum) {
+  let sum = userNum + cpuNum;
+
+  return sum % 2 === 0;
 }
